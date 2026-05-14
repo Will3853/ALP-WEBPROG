@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Website</title>
+        <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </head>
+    <body class="leading-7 bg-gradient-to-r from-[#0F0F0F] via-[#0A0014] to-[#0F0F0F]">
+    <header class="bg-[#101011] h-20">
+            <div class="flex justify-evenly items-center h-full">
+                <a href="home.html" class="nav-Button">Home</a>
+                <a href="hobby.html" class="nav-Button ">Hobby</a>
+                <div class="relative flex flex-col items-center">
+                    <a href="gallery.html" class="current-nav-Button ">Gallery</a>
+                    <div class="absolute -bottom-7 bg-[#5B29DF] w-17 h-0.5 mt-10"></div>
+                </div>
+            </div>
+    </header>
+    <div class="flex justify-center mt-10 md:mt-20 lg:mt-30 ml-10 mr-10">
+    <div class="text-center relative">
+        <img src="Images/star.png" class="w-10 z-10 absolute -top-5 left-10 md:-left-2 :-left-2">
+        <p class="title text-white text-3xl md:text-5xl">My <span class="title text-[#3B00D8]">Gallery</span></p>
+        <p class="text-[#858585] text-[15px] max-w-xl">Kumpulan gambar dari tahun ke tahun.</p>
+    </div>
+    </div>
+    <div>
+    <div class="gallery bg-[url('Images/image3.jpeg')] mt-10 relative">
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="relative">
+            <p class="title text-white z-10 text-3xl">20<span class="title text-[#1E00FF]">22</span></p>
+            <img src="Images/star.png" class="w-10 z-10 absolute -top-5 -right-6">
+        </div>
+    </div>
+    <div class="flex gap-4 p-15">
+    <div class="flex flex-col gap-4 w-1/2">
+        <img src="Images/image4.jpeg" onclick="openImage(this.src)" class="w-full h-30 lg:h-70 object-cover">
+        <img src="Images/image5.jpeg" onclick="openImage(this.src)" class="w-full h-30 lg:h-70 object-cover">
+    </div>
+    <div class="w-1/2">
+        <img src="Images/image6.jpeg" onclick="openImage(this.src)" class="w-full h-full object-cover">
+    </div>
+    </div>
+
+    <div class="gallery bg-[url('Images/image7.jpeg')] mt-10 relative">
+        <div class="absolute inset-0 bg-black/60 "></div>
+        <div class="relative">
+            <p class="title text-white z-10 text-3xl">20<span class="title text-[#1E00FF]">23</span></p>
+            <img src="Images/star.png" class="w-10 z-10 absolute -top-5 -right-6">
+        </div>
+    </div>
+    <div class="flex gap-4 p-10 justify-center">
+        <img src="Images/image8.jpeg " onclick="openImage(this.src)" class="w-full h-30 lg:h-100 object-cover">
+        <img src="Images/image9.jpeg" onclick="openImage(this.src)" class="w-full h-30 lg:h-100 object-cover">
+    </div>
+
+    </div>
+
+    <div class="gallery bg-[url('Images/image10.jpeg')] mt-10 relative">
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="relative">
+            <p class="title text-white z-10 text-3xl">20<span class="title text-[#1E00FF]">24</span></p>
+            <img src="Images/star.png" class="w-10 z-10 absolute -top-5 -right-6">
+        </div>
+    </div>
+    <div class="flex gap-4 p-10 justify-center">
+        <img src="Images/image11.jpeg" onclick="openImage(this.src)" class="w-full h-32 lg:h-64 object-cover">
+        <img src="Images/image12.jpeg" onclick="openImage(this.src)" class="w-full h-32 lg:h-64 object-cover">
+    </div>
+
+    <div class="gallery bg-[url('Images/image13.jpeg')] mt-10 relative">
+        <div class="absolute inset-0 bg-black/60  backdrop-blur-sm"></div>
+        <div class="relative">
+            <p class="title text-white z-10 text-3xl">20<span class="title text-[#1E00FF]">25</span></p>
+            <img src="Images/star.png" class="w-10 z-10 absolute -top-5 -right-6">
+        </div>
+    </div>
+    <div class="flex gap-4 p-15">
+            <div class="w-1/2">
+        <img src="Images/image14.jpeg" onclick="openImage(this.src)" class="w-full h-full object-cover">
+    </div>
+    <div class="flex flex-col gap-4 w-1/2">
+        <img src="Images/image15.jpeg" onclick="openImage(this.src)" class="w-full h-30 lg:h-70 object-cover">
+        <img src="Images/image16.jpeg" onclick="openImage(this.src)" class="w-full h-30 lg:h-70 object-cover">
+    </div>
+    </div>
+    <hr class="border-gray-700 w-[85%] mx-auto mt-30">
+     <footer class="mt-20 px-8 py-12 md:px-20 lg:px-30">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+            <div>
+                <p class="text-white font-bold text-lg">
+                    William Joewono
+                </p>
+                <p class="text-[#858585] mt-4 leading-7">
+                    Technology Student passionate about web development and digital
+                    marketing. Focused on building modern, responsive, and
+                    user-friendly digital experiences.
+                </p>
+                <div class="flex gap-4 mt-8">
+
+                    <a href="https://www.linkedin.com/feed/" class="border border-white w-10 h-10 rounded-full flex items-center justify-center text-white">
+                        in
+                    </a>
+
+                    <a href="https://web.facebook.com/?_rdc=1&_rdr#" class="border border-white w-10 h-10 rounded-full flex items-center justify-center text-white">
+                        f
+                    </a>
+
+                    <a href="https://www.youtube.com/" class="border border-white w-10 h-10 rounded-full flex items-center justify-center text-white">
+                        ▶
+                    </a>
+
+                </div>
+            </div>
+            <div>
+                <p class="text-white font-bold text-lg">
+                    Quick Links
+                </p>
+                <div class="flex flex-col gap-4 mt-4 text-[#858585]">
+                    <a href="home.html">Home</a>
+                    <a href="hobby.html">Hobby</a>
+                    <a href="gallery.html">Gallery</a>
+                </div>
+            </div>
+            <div>
+                <p class="text-white font-bold text-lg">
+                    Specialty
+                </p>
+                <div class="flex flex-col gap-4 mt-4 text-[#858585]">
+                    <p>Email Marketing</p>
+                    <p>Keyword Research</p>
+                    <p>UI Design</p>
+                </div>
+            </div>
+            <div>
+                <p class="text-white font-bold text-lg">
+                    Connect With Me
+                </p>
+                <div class="flex flex-col gap-4 mt-4 text-[#858585]">
+                    <a href="https://www.instagram.com/joewonowilliam/">Instagram</a>
+                    <a href="https://github.com/Will3853/ALP-WEBPROG/">GitHub</a>
+                    <a href="https://www.linkedin.com/feed/">LinkedIn</a>
+                </div>
+            </div>
+
+        </div>
+        </footer>
+        >
+    <script src="script.js"></script>
+    </body>
+
+</html>
